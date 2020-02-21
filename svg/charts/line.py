@@ -146,7 +146,7 @@ class Line(Graph):
                 self.graph,
                 'path',
                 {
-                    'd': 'M0 %s L%s' % (self.graph_height, line_path),
+                    'd': 'M%s L%s' % (paths[0], ' '.join(paths[1:])),
                     'class': 'line%(line_n)s' % vars(),
                 },
             )
